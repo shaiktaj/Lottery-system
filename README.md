@@ -45,12 +45,17 @@ For implementing this initially, I have created the Serverinterface.java which d
 methods which will be executed by the server.
 
 public interface ClientInterface extends Remote{
+
 void receiveMessage(String message) throws RemoteException;
+
 String getName() throws RemoteException;
+
 String getHashNumber() throws RemoteException;
+
 String getNumber() throws RemoteException;
+
 String getNonce() throws RemoteException;
-// void receiveNumber(String number) throws RemoteException;
+
 }
 
 Client.java - This implements all the methods declared above .
